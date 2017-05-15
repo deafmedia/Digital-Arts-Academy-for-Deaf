@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAAD</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/propeller/css/bootstrap.min.css">
+    <!-- Propeller CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/propeller/css/propeller.min.css">
+    <!-- DAAD, Header & footer CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/header-footer.css">
+    <!-- bootsnav CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/bootsnav/bootsnav.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/bootsnav/animate.css">
+    <!-- Coming Soon CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/mb comingsoon/css/mb-comingsoon-iceberg.css">
+    <!-- DAAD CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/propeller.daad.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/daad.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body ng-app="DAADWebApp">
+    <!-- Our Website Content Goes Here -->
+    <div ng-include='"templates/header.html"'></div>
+    <div ng-view></div>
+    <div ng-include='"templates/footer.html"'></div>
+    <!-- End Our Website Content Goes Here -->
+    <!-- jQuery -->
+    <script src="assets/propeller/js/jquery.js"></script>
+    <!-- Angular, followed by our custom Javascripts -->
+    <script src="assets/angular/angular.min.js"></script>
+    <script src="assets/angular/angular-route.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/propeller/js/bootstrap.min.js"></script>
+    <!-- Propeller JavaScript -->
+    <script src="assets/propeller/js/propeller.min.js"></script>
+    <!-- bootsnav JavaScript-->
+    <script src="assets/libs/bootsnav/bootsnav.js"></script>
+    <!-- Video Background JavaScript-->
+    <script src="assets/libs/video background/video-background.module.js"></script>
+    <!-- Coming Soon JavaScript -->
+    <script>
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='assets/libs/mb comingsoon/js/Lib/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script src="assets/libs/mb comingsoon/js/jquery.mb-comingsoon.js"></script>
+    <!-- Our DAAD Javascripts -->
+    <script src="assets/js/propeller.daad.js"></script>
+    <script src="assets/js/daad.js"></script>
+</body>
+
+</html>
